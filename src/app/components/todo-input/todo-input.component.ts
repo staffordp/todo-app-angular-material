@@ -22,7 +22,7 @@ export class TodoInputComponent implements OnInit {
 
   constructor(private todoService: TodoService) {
     this.todoText = '';
-    this.todoDate = this.serializedDate.value;
+    this.todoDate = this.serializedDate.value.toString();
   }
 
   ngOnInit() {
