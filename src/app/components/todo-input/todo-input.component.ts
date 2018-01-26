@@ -13,8 +13,9 @@ import { TodoService } from '../../services/todo.service';
 export class TodoInputComponent implements OnInit {
 
   private todoText: string;
-  private todoDate: string;
 
+  // private todoDate: string;
+  todoDate = new FormControl(new Date());
   date = new FormControl(new Date());
   serializedDate = new FormControl((new Date()).toISOString());
 
@@ -31,7 +32,7 @@ export class TodoInputComponent implements OnInit {
     console.log('Adding TODO.');
     console.log(this.todoText);
     console.log(this.todoDate);
-    this.todoService.addTodo(this.todoText, this.todoDate);
+    this.todoService.addTodo(this.todoDate, this.todoText);
 
   }
 
