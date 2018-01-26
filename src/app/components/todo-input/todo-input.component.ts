@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl} from '@angular/forms';
-import * as _moment from 'moment';
-import {default as _rollupMoment} from 'moment';
-const moment = _rollupMoment || _moment;
+// import {FormControl} from '@angular/forms';
+// import * as _moment from 'moment';
+// import {default as _rollupMoment} from 'moment';
+// const moment = _rollupMoment || _moment;
 import { TodoService } from '../../services/todo.service';
 
 @Component({
@@ -13,6 +13,8 @@ import { TodoService } from '../../services/todo.service';
 export class TodoInputComponent implements OnInit {
 
   private todoText: string;
+  private todoDate: string;
+
 
   constructor(private todoService: TodoService) {
     this.todoText = '';
