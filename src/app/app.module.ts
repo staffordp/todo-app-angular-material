@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TodoInputComponent } from './components/todo-input/todo-input.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { TodoService } from './services/todo.service';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     MatNativeDateModule
   ],
   providers: [
+    TodoService
   ],
   bootstrap: [AppComponent]
 })
