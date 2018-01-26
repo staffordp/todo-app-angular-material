@@ -3,11 +3,17 @@
   <mat-form-field class="todo-full-width">
     <textarea matInput [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}" value={{todoText}} placeholder="Task Name"></textarea>
   </mat-form-field>
-  <mat-form-field>
-    <input matInput [matDatepicker]="picker" [(ngModel)]="todoDate" [ngModelOptions]="{standalone: true}" placeholder="Date/Time" >
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
+  <!--<mat-form-field>-->
+    <div class="input-wrapper">
+      <div><h4>Date/Time</h4></div>
+      <input [(ngModel)]="todoDate" [ngModelOptions]="{standalone: true}"
+             [owlDateTimeTrigger]="dtPicker1" [owlDateTime]="dtPicker1">
+      <owl-date-time #dtPicker1></owl-date-time>
+    </div>
+    <!--<input matInput [matDatepicker]="picker" [(ngModel)]="todoDate" [ngModelOptions]="{standalone: true}" placeholder="Date/Time" >-->
+    <!--<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>-->
+    <!--<mat-datepicker #picker></mat-datepicker>-->
+  <!--</mat-form-field>-->
   <div class="clearfix"></div>
   <div class="button-container">
     <button class="btn btn-primary">Cancel</button>
