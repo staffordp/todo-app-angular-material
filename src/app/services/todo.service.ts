@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Todo } from '../classes/todo';
-import { DatePipe } from '@angular/common';
 import {FormControl} from '@angular/forms';
 
 @Injectable()
@@ -19,23 +18,15 @@ export class TodoService {
   }
 
   public getTodos(): Todo[] {
-    // console.log(this.todoArr);
     return this.todoArr;
   }
   todoDate = new FormControl(new Date());
   public addTodo(text: string, date): void {
     console.log('Adding todo!');
-    // var x = new FormControl(new Date(date));
-    // console.log(x);
-
     // Create a new todo from the input
-
-
     let todo = new Todo(this.nextIndex, text, date);
     // Push the todo to the array
     this.todoArr.push(todo);
-    // console.log('Todos are:');
-    // console.log(this.todoArr);
   }
 
   public deleteTodo(index: number): void {
