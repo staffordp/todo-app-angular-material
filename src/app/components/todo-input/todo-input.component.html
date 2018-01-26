@@ -1,7 +1,7 @@
 <form class="todo-form">
-  <h5>New Task</h5>
+  <h4>New Task</h4>
   <mat-form-field class="todo-full-width">
-    <textarea matInput placeholder="Task Name"></textarea>
+    <textarea matInput [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}" value={{todoText}} placeholder="Task Name"></textarea>
   </mat-form-field>
   <mat-form-field class="example-full-width">
     <input matInput [matDatepicker]="picker" placeholder="Date/Time" >
