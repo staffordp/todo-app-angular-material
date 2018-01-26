@@ -13,6 +13,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { TodoService } from './services/todo.service';
 import { MomentModule } from 'angular2-moment';
 
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { MomentModule } from 'angular2-moment';
     MatDatepickerModule,
     MatInputModule,
     MatNativeDateModule,
-    MomentModule
+    MomentModule,
+    OwlDateTimeModule,
+    OwlNativeDateTimeModule
   ],
   providers: [
     TodoService
