@@ -14,13 +14,15 @@ import { TodoService } from './services/todo.service';
 import { MomentModule } from 'angular2-moment';
 
 import { OwlDateTimeModule, OwlNativeDateTimeModule, OWL_DATE_TIME_LOCALE  } from 'ng-pick-datetime';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TodoInputComponent,
-    ProfileComponent
+    ProfileComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
