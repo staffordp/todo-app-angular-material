@@ -9,7 +9,14 @@
   width: 100px;
   top: -325px;
   left: 300px;
+}
 
+#hero-figure {
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-end: 0;
+  -webkit-margin-start: 0;
+  height: 340px;
 }
 
 figcaption {
