@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import * as moment from 'moment';
+import { TodoService } from './services/todo.service';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,8 +10,8 @@ import * as moment from 'moment';
 })
 export class AppComponent {
   title = 'todoApp';
-  constructor() {
-    let now = moment(); // add this 2 of 4
+  constructor(private todoService: TodoService) {
+    let now = moment();
     console.log('hello world', now.format());
     console.log(now.add(7, 'days').format());
   }
