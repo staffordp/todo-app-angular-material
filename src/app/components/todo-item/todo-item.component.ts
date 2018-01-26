@@ -17,4 +17,13 @@ export class TodoItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  private deleteTodo(): void {
+    console.log('Deleting TODO.');
+    this.todoService.deleteTodo(this.todo.index);
+
+  }
+
+  private doneTodo(): void {
+    console.log('Done-ing TODO.');
+  }
 }
