@@ -8,13 +8,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TodoInputComponent } from './components/todo-input/todo-input.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TodoInputComponent
+    TodoInputComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
