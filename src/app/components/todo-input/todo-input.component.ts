@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {FormControl} from '@angular/forms';
+import {FormControl} from '@angular/forms';
 // import * as _moment from 'moment';
 // import {default as _rollupMoment} from 'moment';
 // const moment = _rollupMoment || _moment;
@@ -15,10 +15,13 @@ export class TodoInputComponent implements OnInit {
   private todoText: string;
   private todoDate: string;
 
+  date = new FormControl(new Date());
+  serializedDate = new FormControl((new Date()).toISOString());
+
 
   constructor(private todoService: TodoService) {
     this.todoText = '';
-    this.todoDate = '';
+    this.todoDate = this.serializedDate.value;
   }
 
   ngOnInit() {
