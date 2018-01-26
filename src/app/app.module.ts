@@ -1,12 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import {NgModule} from '@angular/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material';
-
-
-import { NgModule } from '@angular/core';
-
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -24,11 +22,14 @@ import { ProfileComponent } from './components/profile/profile.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatDatepickerModule,
+    MatInputModule,
     MatNativeDateModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class TodoAppModule { }
