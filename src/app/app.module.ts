@@ -15,6 +15,9 @@ import { MomentModule } from 'angular2-moment';
 
 import { OwlDateTimeModule, OwlNativeDateTimeModule, OWL_DATE_TIME_LOCALE  } from 'ng-pick-datetime';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import {MatCardModule} from '@angular/material/card';
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
     MatNativeDateModule,
     MomentModule,
     OwlDateTimeModule,
-    OwlNativeDateTimeModule
+    OwlNativeDateTimeModule,
+    MatCardModule
   ],
   providers: [
     TodoService
