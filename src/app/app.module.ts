@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material';
+
 
 import { NgModule } from '@angular/core';
 
@@ -21,7 +24,9 @@ import { ProfileComponent } from './components/profile/profile.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
