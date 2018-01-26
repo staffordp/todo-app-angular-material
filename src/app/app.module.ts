@@ -11,7 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TodoInputComponent } from './components/todo-input/todo-input.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { TodoService } from './services/todo.service';
-
+import { MomentModule } from 'angular2-moment';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { TodoService } from './services/todo.service';
     ReactiveFormsModule,
     MatDatepickerModule,
     MatInputModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MomentModule
   ],
   providers: [
     TodoService
