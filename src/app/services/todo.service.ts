@@ -8,9 +8,14 @@ export class TodoService {
   private nextIndex: number;
 
   constructor() {
+    this.todos = [
+      new Todo(0, 'blank text'),
 
+    ]
+    this.nextIndex = 1;
   }
 
 }
 
 
+}
