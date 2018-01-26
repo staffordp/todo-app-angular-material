@@ -16,6 +16,7 @@ export class TodoInputComponent implements OnInit {
 
   constructor(private todoService: TodoService) {
     this.todoText = '';
+    this.todoDate = '';
   }
 
   ngOnInit() {
@@ -23,6 +24,9 @@ export class TodoInputComponent implements OnInit {
 
   private addTodo(): void {
     console.log('Adding TODO.');
+    console.log(this.todoText);
+    console.log(this.todoDate);
+    // this.todoService.addTodo(this.todoText);
 
   }
 
