@@ -4,7 +4,8 @@
     <app-todo-input></app-todo-input>
   </div>
   <div *ngFor="let todo of todoService.getTodos()" class="todo-item-wrapper">
-    <app-todo-item></app-todo-item>
+    <app-todo-item [todo]="todo"></app-todo-item>
+    <div class="divider"></div>
   </div>
 </div>
 
