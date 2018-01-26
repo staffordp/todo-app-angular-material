@@ -1,11 +1,17 @@
-* {
-  margin: 0 auto;
-}
-
-.todo-full-width  {
+.todo-full-width {
   width: 100%;
 }
 
 .todo-form {
   padding: 0 25px;
 }
+
+.button-container {
+  text-align: right;
+}
+
+.btn:first-child {
+  margin-right: 30px;
+}
+
+
