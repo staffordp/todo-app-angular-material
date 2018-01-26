@@ -31,7 +31,7 @@ export class TodoInputComponent implements OnInit {
     console.log('Adding TODO.');
     console.log(this.todoText);
     console.log(this.todoDate);
-    // this.todoService.addTodo(this.todoText);
+    this.todoService.addTodo(this.todoText, this.todoDate);
 
   }
 
