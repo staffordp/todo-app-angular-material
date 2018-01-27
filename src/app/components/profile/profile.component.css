@@ -2,11 +2,14 @@
   color: white;
 }
 .material-icons {
-  position: relative;
-  bottom: -8px;
   margin-right: 5px;
 }
 
-.svgIcon:hover .user-name-container{
-  color: yellow;
+.svgIcon {
+  background-color: transparent;
 }
+
+.svgIcon:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
