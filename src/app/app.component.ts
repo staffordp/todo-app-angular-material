@@ -12,7 +12,5 @@ export class AppComponent {
   title = 'todoApp';
   constructor(private todoService: TodoService) {
     let now = moment();
-    console.log('hello world', now.format());
-    console.log(now.add(7, 'days').format());
   }
 }
