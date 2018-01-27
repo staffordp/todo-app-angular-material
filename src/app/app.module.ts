@@ -2,7 +2,7 @@ import {BrowserModule, DomSanitizer} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
-import {NgModule} from '@angular/core';
+import {Input, NgModule} from '@angular/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule, MatCheckboxModule, MatIconModule, MatIconRegistry} from '@angular/material';
 
@@ -19,6 +19,7 @@ import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     HttpClientModule,
     MatTooltipModule,
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [
     TodoService
@@ -57,5 +59,11 @@ export class TodoAppModule {
       'morevert',
       sanitizer.bypassSecurityTrustResourceUrl('./assets/more.svg'));
   }
+
+  @Input()
+
+  private disableButton: boolean;
+
+
 
 }
