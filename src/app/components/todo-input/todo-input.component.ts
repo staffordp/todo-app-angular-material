@@ -1,8 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
-// import * as _moment from 'moment';
-// import {default as _rollupMoment} from 'moment';
-// const moment = _rollupMoment || _moment;
 import { TodoService } from '../../services/todo.service';
 
 @Component({
@@ -45,6 +42,13 @@ export class TodoInputComponent implements OnInit {
     this.todoService.addTodo(this.todoDate, this.todoText);
     // Reset totoText after submission
     this.todoText = '';
+
+
+  }
+
+  private cancelTodo(): void {
+    console.log('Csncelling todo');
+    this.showMe = false;
 
 
   }
