@@ -67,6 +67,7 @@ export class TodoService {
 
   public setShowprofile():void {
     this.showProfile = !this.showProfile;
+    console.log('toggling showProfile in service.');
   }
 
 }
