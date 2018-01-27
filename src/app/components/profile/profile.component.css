@@ -1,0 +1,12 @@
+.profile {
+  color: white;
+}
+.material-icons {
+  position: relative;
+  bottom: -8px;
+  margin-right: 5px;
+}
+
+.svgIcon:hover .user-name-container{
+  color: yellow;
+}
