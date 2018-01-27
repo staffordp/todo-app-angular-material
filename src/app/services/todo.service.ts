@@ -9,7 +9,10 @@ export class TodoService {
   private todoArr: Todo[];
   private nextIndex: number;
   private isShowingtodo: boolean;
+  private isShowingprofile: boolean;
   private showTodo: boolean;
+  private showProfile: boolean;
+
 
   constructor() {
     this.todoArr = [
@@ -19,7 +22,9 @@ export class TodoService {
     ]
     this.nextIndex = 1;
     this.isShowingtodo = false;
+    this.isShowingprofile = false;
     this.showTodo = false;
+    this.showProfile = false;
   }
 
   public getTodos(): Todo[] {
@@ -33,7 +38,7 @@ export class TodoService {
     // Push the todo to the array
     this.todoArr.push(todo);
     // Hide the todo input
-    this.showTodo = false;
+    this.showTodo = false''
   }
 
   public deleteTodo(index: number): void {
@@ -53,9 +58,15 @@ export class TodoService {
   }
 
   public showInput(): void {
-    this.showTodo = !this.showVar;
-    console.log('Setting to true');
+    this.showTodo = !this.showTodo;
+  }
 
+  public getShowprofile():void {
+    return this.isShowingprofile;
+  }
+
+  public setShowprofile():void {
+    this.showProfile = !this.showProfile;
   }
 
 }
