@@ -14,3 +14,8 @@
 .divider {
   height: 10px;
 }
+button{
+  float: right;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
