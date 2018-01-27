@@ -23,11 +23,11 @@ export class TodoItemComponent implements OnInit {
 
   }
 
-  private doneTodo(): void {
-    if (this.checked) {
-      console.log('Done-ing TODO.');
-    } else {
-      console.log('un-Done-ing TODO.');
-    }
-  }
+  // private doneTodo(): void {
+  //   if (this.checked) {
+  //     console.log('Done-ing TODO.');
+  //   } else {
+  //     console.log('un-Done-ing TODO.');
+  //   }
+  // }
 }
