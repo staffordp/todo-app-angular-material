@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { Todo } from '../classes/todo';
 import {FormControl} from '@angular/forms';
@@ -7,6 +8,8 @@ export class TodoService {
 
   private todoArr: Todo[];
   private nextIndex: number;
+  private showTodoinput: boolean;
+  private showVar: boolean;
 
   constructor() {
     this.todoArr = [
@@ -15,6 +18,8 @@ export class TodoService {
       new Todo(2, '2018-02-02T16:26:50-05:00', 'Smokin\' cigarettes and watchin\' Captain Kangaroo')
     ]
     this.nextIndex = 1;
+    this.showTodoinput = false;
+    this.showVar = false;
   }
 
   public getTodos(): Todo[] {
@@ -39,6 +44,17 @@ export class TodoService {
 
   }
 
+  public getShowinput(): boolean {
+    // console.log('Show Input');
+    // this.showTodoinput = true;
+    return this.showTodoinput;
+  }
+
+  public showInput(): void {
+    this.showVar = !this.showVar;
+    console.log('Setting to true');
+
+  }
 
 }
 
