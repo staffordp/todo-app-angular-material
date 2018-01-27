@@ -11,7 +11,11 @@ export class ProfileComponent implements OnInit {
     this.userName = 'Guest';
   }
 
-  private userName:string;
+  private userName: string;
+
+  private showProfile():void {
+    console.log('Am showing profile now.');
+  }
 
 
 
