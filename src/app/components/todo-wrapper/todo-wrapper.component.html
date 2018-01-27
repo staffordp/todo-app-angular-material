@@ -1,0 +1,7 @@
+<div *ngFor="let todo of todoService.getTodos()" class="todo-item-wrapper">
+  <app-todo-item [todo]="todo"></app-todo-item>
+  <div class="divider"></div>
+</div>
+<div class="button-container">
+  <button mat-fab color="warn" [disabled]="todoService.showTodo" (click)="todoService.showInput()">+</button>
+</div>
