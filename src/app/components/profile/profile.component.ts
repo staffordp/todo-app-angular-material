@@ -17,10 +17,10 @@ export class ProfileComponent implements OnInit {
 
   private userName: string;
 
-  private showProfile():void {
-    console.log('Am showing profile now.');
-    this.todoService.setShowprofile();
-  }
+  // private showProfile():void {
+  //   console.log('Am showing profile now.');
+  //   this.todoService.setShowprofile();
+  // }
 
 
 
