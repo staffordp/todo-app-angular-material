@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { TodoService } from '../../services/todo.service';
 
 @Component({
@@ -8,8 +8,11 @@ import { TodoService } from '../../services/todo.service';
 })
 export class ProfileComponent implements OnInit {
 
+  // private showingProfile: boolean;
+
   constructor(private todoService: TodoService) {
     this.userName = 'Guest';
+    // this.showingProfile = false;
   }
 
   private userName: string;
