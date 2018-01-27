@@ -38,7 +38,7 @@ export class TodoService {
     // Push the todo to the array
     this.todoArr.push(todo);
     // Hide the todo input
-    this.showTodo = false''
+    this.showTodo = false;
   }
 
   public deleteTodo(index: number): void {
@@ -54,20 +54,24 @@ export class TodoService {
   public getShowinput(): boolean {
     // console.log('Show Input');
     // this.isShowingtodo = true;
-    return this.isShowingtodo;
+    // return this.isShowingtodo;
+    return this.showTodo;
   }
 
   public showInput(): void {
     this.showTodo = !this.showTodo;
   }
 
-  public getShowprofile():void {
-    return this.isShowingprofile;
+  public getShowprofile(): boolean {
+    // return this.isShowingprofile;
+    return this.showProfile;
   }
 
-  public setShowprofile():void {
+
+  public setShowprofile(): void {
     this.showProfile = !this.showProfile;
     console.log('toggling showProfile in service.');
+    console.log(this.showProfile);
   }
 
 }
