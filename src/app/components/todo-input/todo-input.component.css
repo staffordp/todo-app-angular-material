@@ -19,7 +19,7 @@
 }
 
 .todo-card {
-  width: calc(800px - 48px);
+  width: 600px;
   margin-bottom: 20px;
 }
 
