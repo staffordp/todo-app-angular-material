@@ -13,3 +13,7 @@
   background-color: rgba(128, 128, 128, 0.5);
 }
 
+::ng-deep .profile-menu {
+  width: 100px;
+}
+
