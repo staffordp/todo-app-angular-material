@@ -43,6 +43,8 @@ export class TodoInputComponent implements OnInit {
     // console.log(this.todoDate);
     // this.todoDate = this.todoDate.toString();
     this.todoService.addTodo(this.todoDate, this.todoText);
+    // Reset totoText after submission
+    this.todoText = '';
 
 
   }
