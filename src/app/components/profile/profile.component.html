@@ -3,5 +3,5 @@
   <i class="material-icons">person</i><span class="user-name-container">{{userName}}</span></a>
 </div>
 <mat-menu class="profile-menu" [overlapTrigger]="false" #menu="matMenu">
-  <button mat-menu-item (click)="showProfile()">Login</button>
+  <button mat-menu-item (click)="todoService.setShowprofile()">Login</button>
 </mat-menu>
