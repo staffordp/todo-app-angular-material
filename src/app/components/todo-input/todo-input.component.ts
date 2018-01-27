@@ -5,8 +5,6 @@ import {FormControl} from '@angular/forms';
 // const moment = _rollupMoment || _moment;
 import { TodoService } from '../../services/todo.service';
 
-
-
 @Component({
   selector: 'app-todo-input',
   templateUrl: './todo-input.component.html',
@@ -45,6 +43,7 @@ export class TodoInputComponent implements OnInit {
     // console.log(this.todoDate);
     // this.todoDate = this.todoDate.toString();
     this.todoService.addTodo(this.todoDate, this.todoText);
+
 
   }
 
