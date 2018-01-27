@@ -1,16 +1,31 @@
 <mat-card class="todo-card">
-  <mat-card-content>
-    <div>
-      {{todo.date | date:'fullDate'}}
-      {{todo.date | date:'shortTime'}}
-    </div>
-    <p>
-      {{todo.text}}
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <mat-checkbox></mat-checkbox>
-    <button mat-button (click)="doneTodo()">Done</button>
-    <button mat-button (click)="deleteTodo()">Delete</button>
-  </mat-card-actions>
+  <div class="mat-card-container">
+    <mat-card-content>
+      <div>
+        {{todo.date | date:'fullDate'}}
+        {{todo.date | date:'shortTime'}}
+      </div>
+      <p>
+        {{todo.text}}
+      </p>
+    </mat-card-content>
+  </div>
+  <div class="mat-card-actions-container">
+    <mat-card-actions>
+      <mat-checkbox matTooltip="Done"></mat-checkbox>
+      <a class="svgIcon" matTooltip="Delete" [matMenuTriggerFor]="menu" >
+        <i class="material-icons">more_vert</i>
+        <mat-menu class="test" [overlapTrigger]="false" #menu="matMenu">
+          <button mat-menu-item>Delete</button>
+        </mat-menu>
+      </a>
+      <!--<button mat-button [matMenuTriggerFor]="menu">Menu</button>-->
+      <!--<mat-menu #menu="matMenu">-->
+        <!--<button mat-menu-item>Delete</button>-->
+      <!--</mat-menu>-->
+
+      <!--<button mat-button (click)="doneTodo()">Done</button>-->
+      <!--<button mat-button (click)="deleteTodo()">Delete</button>-->
+    </mat-card-actions>
+  </div>
 </mat-card>
