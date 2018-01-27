@@ -13,7 +13,7 @@ import { TodoService } from '../../services/todo.service';
 export class TodoInputComponent implements OnInit {
   @Input()
 
-  private showMePartially: boolean;
+  private showMe: boolean;
   private todoText: string;
 
   private todoDate: string;
@@ -29,7 +29,7 @@ export class TodoInputComponent implements OnInit {
     // this.todoDate = '';
     this.todoDate = this.serializedDate.value;
     this.showTodoinput = todoService.getShowinput();
-    this.showMePartially = false;
+    this.showMe = false;
     console.log(this.showTodoinput);
   }
 
