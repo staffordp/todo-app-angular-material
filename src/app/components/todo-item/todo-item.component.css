@@ -44,3 +44,8 @@ button:nth-of-type(1) {
 button[_ngcontent-c3]:nth-of-type(1) {
   margin-left: 0;
 }
+
+.done {
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
