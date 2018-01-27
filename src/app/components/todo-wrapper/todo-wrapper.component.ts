@@ -12,7 +12,7 @@ export class TodoWrapperComponent implements OnInit {
   private showingProfile: boolean;
 
   constructor(private todoService: TodoService) {
-    this.showingProfile = false;
+    this.showingProfile = todoService.getShowprofile();
 
   }
 
