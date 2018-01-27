@@ -1,6 +1,6 @@
 
 .hero-container {
-  width: 400px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -8,7 +8,7 @@
   position: relative;
   width: 100px;
   top: -325px;
-  left: 300px;
+  left: 700px;
 }
 
 #hero-figure {
@@ -22,7 +22,7 @@
 figcaption {
   background: grey;
   padding: 10px 0;
-  width: 400px;
+  width: 800px;
   margin: 0 auto;
 }
 
