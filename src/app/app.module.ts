@@ -1,10 +1,10 @@
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule, DomSanitizer} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {NgModule} from '@angular/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule, MatCheckboxModule} from '@angular/material';
+import {MatNativeDateModule, MatCheckboxModule, MatIconModule, MatIconRegistry} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,9 +16,7 @@ import { MomentModule } from 'angular2-moment';
 import { OwlDateTimeModule, OwlNativeDateTimeModule, OWL_DATE_TIME_LOCALE  } from 'ng-pick-datetime';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import {MatCardModule} from '@angular/material/card';
-
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +25,7 @@ import {MatCardModule} from '@angular/material/card';
     TodoInputComponent,
     ProfileComponent,
     TodoItemComponent
+    // SvgIconComponent
   ],
   imports: [
     BrowserModule,
@@ -40,11 +39,20 @@ import {MatCardModule} from '@angular/material/card';
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [
     TodoService
   ],
   bootstrap: [AppComponent]
 })
-export class TodoAppModule { }
+export class TodoAppModule {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+      'morevert',
+      sanitizer.bypassSecurityTrustResourceUrl('./assets/more.svg'));
+  }
+
+}
