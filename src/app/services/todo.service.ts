@@ -8,8 +8,8 @@ export class TodoService {
 
   private todoArr: Todo[];
   private nextIndex: number;
-  private showTodoinput: boolean;
-  private showVar: boolean;
+  private isShowingtodo: boolean;
+  private showTodo: boolean;
 
   constructor() {
     this.todoArr = [
@@ -18,8 +18,8 @@ export class TodoService {
       new Todo(2, '2018-02-02T16:26:50-05:00', 'Smokin\' cigarettes and watchin\' Captain Kangaroo')
     ]
     this.nextIndex = 1;
-    this.showTodoinput = false;
-    this.showVar = false;
+    this.isShowingtodo = false;
+    this.showTodo = false;
   }
 
   public getTodos(): Todo[] {
@@ -32,6 +32,8 @@ export class TodoService {
     let todo = new Todo(this.nextIndex, text, date);
     // Push the todo to the array
     this.todoArr.push(todo);
+    // Hide the todo input
+    this.showTodo = false;
   }
 
   public deleteTodo(index: number): void {
@@ -46,12 +48,12 @@ export class TodoService {
 
   public getShowinput(): boolean {
     // console.log('Show Input');
-    // this.showTodoinput = true;
-    return this.showTodoinput;
+    // this.isShowingtodo = true;
+    return this.isShowingtodo;
   }
 
   public showInput(): void {
-    this.showVar = !this.showVar;
+    this.showTodo = !this.showVar;
     console.log('Setting to true');
 
   }
