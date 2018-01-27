@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
 import { TodoService } from '../../services/todo.service';
 
 @Component({
@@ -7,6 +8,10 @@ import { TodoService } from '../../services/todo.service';
   styleUrls: ['./profile-input.component.css']
 })
 export class ProfileInputComponent implements OnInit {
+
+  @Input()
+  private nameText: string;
+  private emailText: string;
 
 
   private showingProfile: boolean;
@@ -20,6 +25,18 @@ export class ProfileInputComponent implements OnInit {
     console.log('Am showing profile now.');
     this.todoService.setShowprofile();
   }
+
+  private saveUser(): void {
+    console.log('Saving the user');
+    console.log(this.nameText);
+    console.log(this.emailText);
+    this.todoService.addUser(this.nameText, this.emailText);
+    this.nameText = '';
+    this.emailText = '';
+
+
+  }
+
 
   ngOnInit() {
   }
