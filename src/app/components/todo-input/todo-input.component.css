@@ -1,3 +1,7 @@
+* {
+  margin: 0 auto;
+}
+
 .todo-full-width {
   width: 100%;
 }
@@ -12,6 +16,11 @@
 
 .btn:first-child {
   margin-right: 30px;
+}
+
+.todo-card {
+  width: calc(800px - 48px);
+  margin-bottom: 20px;
 }
 
 
