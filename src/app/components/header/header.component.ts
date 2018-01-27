@@ -9,7 +9,13 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  private date = Date.now();
+
   ngOnInit() {
+  }
+
+  private showProfile(): void {
+    console.log('Showing Profile');
   }
 
 }
