@@ -4,7 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {NgModule} from '@angular/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material';
+import {MatNativeDateModule, MatCheckboxModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,6 +16,7 @@ import { MomentModule } from 'angular2-moment';
 import { OwlDateTimeModule, OwlNativeDateTimeModule, OWL_DATE_TIME_LOCALE  } from 'ng-pick-datetime';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import {MatCardModule} from '@angular/material/card';
+
 
 
 
@@ -38,7 +39,8 @@ import {MatCardModule} from '@angular/material/card';
     MomentModule,
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule
   ],
   providers: [
     TodoService
