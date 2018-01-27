@@ -12,6 +12,7 @@ export class TodoItemComponent implements OnInit {
   @Input()
 
   private todo: Todo;
+  private checked: false;
   constructor(private todoService: TodoService) { }
 
   ngOnInit() {
@@ -24,6 +25,10 @@ export class TodoItemComponent implements OnInit {
   }
 
   private doneTodo(): void {
-    console.log('Done-ing TODO.');
+    if (this.checked) {
+      console.log('Done-ing TODO.');
+    } else {
+      console.log('un-Done-ing TODO.');
+    }
   }
 }
