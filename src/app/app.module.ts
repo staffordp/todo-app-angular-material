@@ -21,6 +21,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { TodoWrapperComponent } from './components/todo-wrapper/todo-wrapper.component';
+import { ProfileInputComponent } from './components/profile-input/profile-input.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TodoWrapperComponent } from './components/todo-wrapper/todo-wrapper.com
     TodoInputComponent,
     ProfileComponent,
     TodoItemComponent,
-    TodoWrapperComponent
+    TodoWrapperComponent,
+    ProfileInputComponent
   ],
   imports: [
     BrowserModule,
