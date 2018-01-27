@@ -1,7 +1,10 @@
 <div class="profile">
-<a class="svgIcon" matTooltip="Login" [matMenuTriggerFor]="menu">
-  <i class="material-icons">person</i><span class="user-name-container">{{userName}}</span></a>
+  <button mat-raised-button color="warn" class="svgIcon" [matMenuTriggerFor]="menu">
+    <i class="material-icons">person</i><span class="user-name-container">{{userName}}</span>
+  </button>
+<!--<button class="btn btn-primary svgIcon" matTooltip="Login" >-->
+ <!--</button>-->
 </div>
-<mat-menu class="profile-menu" [overlapTrigger]="false" #menu="matMenu">
+<mat-menu class="profile-menu"  #menu="matMenu">
   <button mat-menu-item (click)="todoService.setShowprofile()">Login</button>
 </mat-menu>
