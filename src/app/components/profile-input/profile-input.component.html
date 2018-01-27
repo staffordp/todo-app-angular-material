@@ -1,0 +1,20 @@
+<mat-card *ngIf="todoService.getShowprofile()" class="profile-card">
+  <form class="profile-form" >
+    <mat-form-field class="profile-full-width">
+      <textarea matInput [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}" value={{todoText}} placeholder="Name"></textarea>
+    </mat-form-field>
+    <mat-form-field class="profile-full-width">
+      <textarea matInput [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}" value={{todoText}} placeholder="Email"></textarea>
+    </mat-form-field>
+    <!--<div class="input-wrapper">-->
+    <!--<div><h4>Date/Time</h4></div>-->
+    <!--<input [(ngModel)]="todoDate" [ngModelOptions]="{standalone: true}"-->
+    <!--[owlDateTimeTrigger]="dtPicker1" [owlDateTime]="dtPicker1">-->
+    <!--<owl-date-time #dtPicker1></owl-date-time>-->
+    <!--</div>-->
+    <div class="clearfix"></div>
+    <div class="button-container">
+    <button class="btn btn-primary" type="button" (click)="addTodo()">Save</button>
+    </div>
+  </form>
+</mat-card>
