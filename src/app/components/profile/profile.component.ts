@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoService } from '../../services/todo.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() {
+  constructor(private todoService: TodoService) {
     this.userName = 'Guest';
   }
 
@@ -15,6 +16,7 @@ export class ProfileComponent implements OnInit {
 
   private showProfile():void {
     console.log('Am showing profile now.');
+    this.todoService.setShowprofile();
   }
 
 
