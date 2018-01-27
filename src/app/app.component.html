@@ -1,11 +1,13 @@
 <div class="ToDoApp">
   <app-header></app-header>
-  <div class="todo-wrapper">
-    <app-todo-input></app-todo-input>
+  <div class="todo-wrapper" >
+    <app-todo-input [showMePartially]="todoService.showVar"></app-todo-input>
   </div>
   <div *ngFor="let todo of todoService.getTodos()" class="todo-item-wrapper">
     <app-todo-item [todo]="todo"></app-todo-item>
     <div class="divider"></div>
   </div>
+  <div class="button-container">
+    <button mat-fab color="warn" [disabled]="todoService.showVar" (click)="todoService.showInput()">+</button>
+  </div>
 </div>
-
