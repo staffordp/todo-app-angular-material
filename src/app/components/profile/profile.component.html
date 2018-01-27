@@ -1,3 +1,7 @@
 <div class="profile">
-  <h5>Name</h5>
+<a class="svgIcon" matTooltip="Profile" [matMenuTriggerFor]="menu">
+  <i class="material-icons">person</i><span class="user-name-container">{{userName}}</span></a>
 </div>
+<mat-menu class="profile-menu" [overlapTrigger]="false" #menu="matMenu">
+  <button mat-menu-item (click)="showProfile()">show</button>
+</mat-menu>
