@@ -17,6 +17,8 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule, OWL_DATE_TIME_LOCALE  } fro
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,6 @@ import { HttpClientModule } from '@angular/common/http';
     TodoInputComponent,
     ProfileComponent,
     TodoItemComponent
-    // SvgIconComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatCheckboxModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTooltipModule,
+    MatMenuModule
   ],
   providers: [
     TodoService
