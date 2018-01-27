@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { TodoWrapperComponent } from './components/todo-wrapper/todo-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {MatButtonModule} from '@angular/material/button';
     HeaderComponent,
     TodoInputComponent,
     ProfileComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    TodoWrapperComponent
   ],
   imports: [
     BrowserModule,
