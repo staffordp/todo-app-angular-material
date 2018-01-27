@@ -1,6 +1,6 @@
 <div class="profile">
   <button mat-raised-button color="warn" class="svgIcon" [matMenuTriggerFor]="menu">
-    <i class="material-icons">person</i><span class="user-name-container">{{userName}}</span>
+    <i class="material-icons">person</i><span class="user-name-container">{{todoService.getProfile().realName}}</span>
   </button>
 <!--<button class="btn btn-primary svgIcon" matTooltip="Login" >-->
  <!--</button>-->
