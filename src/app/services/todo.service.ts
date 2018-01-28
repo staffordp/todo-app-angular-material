@@ -94,7 +94,7 @@ export class TodoService {
   }
 
   public getProfile():string {
-    console.log('Returning user');
+    // console.log('Returning user');
     return this.userArr[this.userArr.length - 1].realName;
   }
 
