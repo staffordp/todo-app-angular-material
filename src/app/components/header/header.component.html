@@ -2,7 +2,7 @@
   <figure id="hero-figure">
     <img src="http://placekitten.com/800/300" />
     <figcaption>
-      <div class="date-container">
+      <div class="date-container" *ngIf="!todoService.getShowprofile()">
         {{date | date:'fullDate'}}
       </div>
       </figcaption>
