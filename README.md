@@ -1,4 +1,4 @@
-## Submission for Intertech Media Front End Engineer
+# Submission for Intertech Media Front End Engineer
 
 This project serves as my offical submission for the second (and hopefully last) coding test for the role of Front End Engineer.
 This app utilizes the [Angular Matierlal] (https://material.angular.io/) components.
