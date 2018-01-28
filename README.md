@@ -8,6 +8,11 @@ The following additional components are user:
 * [Angular2Moment] (https://github.com/urish/angular2-moment)
 * [ng-pick-datetime] (https://www.npmjs.com/package/ng-pick-datetime)
 
+# Known Issues
+
+The ng test will output numerous errors.  Some I have addressed; others, I have not because I am not sure how. I have scoured stackOverflow 
+and google looking for solutions but to no avail.
+
 # TodoAppAngularMaterials
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
