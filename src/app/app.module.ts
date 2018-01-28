@@ -22,6 +22,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { TodoWrapperComponent } from './components/todo-wrapper/todo-wrapper.component';
 import { ProfileInputComponent } from './components/profile-input/profile-input.component';
+import { OrderByPipe } from './pipes/order-by.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProfileInputComponent } from './components/profile-input/profile-input.
     ProfileComponent,
     TodoItemComponent,
     TodoWrapperComponent,
-    ProfileInputComponent
+    ProfileInputComponent,
+    OrderByPipe
   ],
   imports: [
     BrowserModule,
