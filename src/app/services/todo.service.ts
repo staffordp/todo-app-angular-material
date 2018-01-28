@@ -51,11 +51,11 @@ export class TodoService {
     this.nextIndex++;
   }
 
-  public deleteTodo(index: number): void {
+  public deleteTodo(idx: number): void {
     this.todoArr = this.todoArr.filter(function(item) {
-      return item.index !== index;
+      return item.idx !== idx;
     });
-    console.log('deleting ' + index);
+    console.log('deleting ' + idx);
 
     console.log(this.todoArr);
 
@@ -95,7 +95,7 @@ export class TodoService {
 
   public getProfile():string {
     console.log('Returning user');
-    return this.userArr[this.userArr.length - 1];
+    return this.userArr[this.userArr.length - 1].realName;
   }
 
 }
