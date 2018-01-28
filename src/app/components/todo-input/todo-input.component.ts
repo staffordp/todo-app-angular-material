@@ -15,15 +15,12 @@ export class TodoInputComponent implements OnInit {
 
   private todoDate: string;
   private showTodoinput: boolean;
-  // todoDate = new FormControl(new Date());
-  // date = new FormControl(new Date());
   serializedDate = new FormControl((new Date()).toISOString());
 
 
 
   constructor(private todoService: TodoService) {
     this.todoText = '';
-    // this.todoDate = '';
     this.todoDate = this.serializedDate.value;
     this.showTodoinput = todoService.getShowinput();
     this.showMe = false;
@@ -37,8 +34,7 @@ export class TodoInputComponent implements OnInit {
     console.log('Adding TODO.');
     console.log(this.todoDate);
     console.log(typeof(this.todoDate));
-    // console.log(this.todoDate);
-    // this.todoDate = this.todoDate.toString();
+
     this.todoService.addTodo(this.todoDate, this.todoText);
     // Reset totoText after submission
     this.todoText = '';
