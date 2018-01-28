@@ -1,7 +1,7 @@
 <div class="profile-input-wrapper" *ngIf="todoService.getShowprofile()">
 <div class=input-nav-container>
-  <button mat-raised-button class="svgIcon">
-    <i class="material-icons">arrow_back</i><span class=""></span>
+  <button mat-raised-button class="svgIcon" (click)="todoService.setShowprofile()">
+    <i class="material-icons">arrow_back</i>
   </button>
 </div>
 <mat-card  class="profile-card">
