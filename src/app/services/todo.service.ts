@@ -19,9 +19,9 @@ export class TodoService {
 
   constructor() {
     this.todoArr = [
-      new Todo(0, '2018-02-02T16:26:50-05:00', 'Countin\' flowers on the wall. That don\'t bother me at all.'),
-      new Todo(1, '2018-02-02T16:26:50-05:00', 'Playin\' solitaire till dawn with a deck of fifty-one'),
-      new Todo(2, '2018-02-02T16:26:50-05:00', 'Smokin\' cigarettes and watchin\' Captain Kangaroo')
+      new Todo(0, '2016-02-02T16:26:50-05:00', 'Countin\' flowers on the wall. That don\'t bother me at all.'),
+      new Todo(1, '2015-02-02T16:26:50-05:00', 'Playin\' solitaire till dawn with a deck of fifty-one'),
+      new Todo(2, '201802-02T16:26:50-05:00', 'Smokin\' cigarettes and watchin\' Captain Kangaroo')
     ]
     this.userArr = [
       new User(0, 'Guest', 'something@example.com'),
