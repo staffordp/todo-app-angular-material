@@ -20,7 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {TodoWrapperComponent} from './components/todo-wrapper/todo-wrapper.component';
 import {ProfileInputComponent} from './components/profile-input/profile-input.component';
 import {OrderByPipe} from './pipes/order-by.pipe';
-import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA} from '@angular/core';
 
 @NgModule({
   declarations: [
