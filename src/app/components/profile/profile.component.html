@@ -1,4 +1,4 @@
-<div class="profile">
+<div class="profile" [ngClass]="todoService.getShowprofile() ? 'move-down' : ''">
   <button mat-raised-button color="warn" class="svgIcon" [matMenuTriggerFor]="menu">
     <i class="material-icons">person</i><span class="user-name-container">{{todoService.getProfile()}}</span>
   </button>
