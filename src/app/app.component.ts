@@ -9,7 +9,7 @@ import {TodoService} from './services/todo.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todoApp';
+  title = 'App';
 
   constructor(private todoService: TodoService) {
     const now = moment();
