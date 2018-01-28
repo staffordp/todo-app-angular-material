@@ -49,6 +49,7 @@ export class TodoInputComponent implements OnInit {
   private cancelTodo(): void {
     console.log('Csncelling todo');
     this.showMe = false;
+    this.todoService.showInput();
 
 
   }
