@@ -13,7 +13,7 @@ export class ProfileInputComponent implements OnInit {
   @Input()
   private nameText: string;
   private emailText: string;
-  private userName: User;
+  // private userName: User;
 
   private showingProfile: boolean;
 
@@ -21,13 +21,13 @@ export class ProfileInputComponent implements OnInit {
     this.showingProfile = todoService.getShowprofile();
   }
 
-  private showProfile(): void {
-    console.log('Am showing profile now.');
-    this.todoService.setShowprofile();
-  }
+  // private showProfile(): void {
+  //   // console.log('Am showing profile now.');
+  //   this.todoService.setShowprofile();
+  // }
 
   private saveUser(): void {
-    console.log('Saving the user');
+    // console.log('Saving the user');
     console.log(this.nameText);
     console.log(this.emailText);
     this.todoService.addUser(this.nameText, this.emailText);
