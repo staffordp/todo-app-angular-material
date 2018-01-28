@@ -25,7 +25,7 @@ button:nth-of-type(1) {
 }
 
 .material-icons:hover {
-  color: orange;
+  color: purple;
   cursor: pointer;
 }
 
