@@ -68,9 +68,6 @@ export class TodoAppModule {
   }
 
   @Input()
-
   private disableButton: boolean;
-
-
 
 }
