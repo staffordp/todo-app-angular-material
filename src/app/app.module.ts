@@ -3,7 +3,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {Input, NgModule} from '@angular/core';
-import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule, MatCheckboxModule, MatIconModule, MatIconRegistry} from '@angular/material';
 
 import {AppComponent} from './app.component';
@@ -40,7 +39,6 @@ import {OrderByPipe} from './pipes/order-by.pipe';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatDatepickerModule,
     MatInputModule,
     MatNativeDateModule,
     MomentModule,
