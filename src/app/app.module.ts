@@ -34,7 +34,6 @@ import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
     OrderByPipe
   ],
   imports: [
-    HeaderComponent,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
