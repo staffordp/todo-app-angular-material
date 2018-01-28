@@ -36,9 +36,6 @@ import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
     ProfileInputComponent,
     OrderByPipe
   ],
-  exports: [
-    HeaderComponent
-  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -59,10 +56,6 @@ import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
   ],
   providers: [
     TodoService
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
   ],
   bootstrap: [AppComponent]
 })
