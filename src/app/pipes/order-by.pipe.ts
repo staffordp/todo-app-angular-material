@@ -10,7 +10,7 @@ export class OrderByPipe implements PipeTransform {
 
   transform(array: Array<string>, args: string): Array<string> {
 
-    if(!array || array === undefined || array.length === 0) return null;
+    if (!array || array === undefined || array.length === 0) { return null; }
 
     array.sort((a: any, b: any) => {
       if (a.date < b.date) {

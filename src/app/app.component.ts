@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import * as moment from 'moment';
-import {TodoService} from '../../services/todo.service';
+import {TodoService} from './services/todo.service';
 
 
 @Component({

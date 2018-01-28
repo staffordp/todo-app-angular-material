@@ -41,7 +41,7 @@ export class TodoService {
   public addTodo(text: string, date): void {
     console.log('Adding todo!');
     // Create a new todo from the input
-    let todo = new Todo(this.nextIndex, text, date);
+    const todo = new Todo(this.nextIndex, text, date);
     // Push the todo to the array
     this.todoArr.push(todo);
     // Hide the todo input
@@ -88,9 +88,9 @@ export class TodoService {
     console.log('Adding user!');
     // Check to see if it is modifying an existing user
     // Since we are not storing the user data as persistent, we can just check to see if the current user matches the latest index
-    let x = this.userArr.length;
+    const x = this.userArr.length;
     if (x !== 1) {
-      this.userArr.pop(x);
+      this.userArr.pop();
       console.log('Modifying old user');
       this.nextUserindex = x;
       // let user = new User(x, someName, someEmail);
@@ -98,19 +98,8 @@ export class TodoService {
       console.log('Adding new user!');
       this.nextUserindex++;
     }
-    let user = new User(this.nextUserindex, someName, someEmail);
+    const user = new User(this.nextUserindex, someName, someEmail);
     this.userArr.push(user);
-    // if (x === 1) {
-    //   console.log('Adding new user!');
-    //   let user = new User(this.nextUserindex, someName, someEmail);
-    //   this.userArr.push(user);
-    //   this.nextUserindex++;
-    // } else {
-    //   this.userArr.pop(x);
-    //   console.log("Modifying old user");
-    //   let user = new User(x, someName, someEmail);
-    //   this.userArr.push(user);
-    // }
 
     this.setShowprofile();
 
