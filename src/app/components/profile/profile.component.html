@@ -4,6 +4,9 @@
   </button>
 </div>
 <mat-menu class="profile-menu" #menu="matMenu">
-  <button mat-menu-item *ngIf="todoService.getProfile() == 'Guest'" (click)="todoService.setShowprofile()">Login</button>
-  <button mat-menu-item *ngIf="todoService.getProfile() !== 'Guest'" (click)="todoService.setShowprofile()">Edit Profile</button>
+  <button mat-menu-item *ngIf="todoService.getProfile() == 'Guest'" (click)="todoService.setShowprofile()">Login
+  </button>
+  <button mat-menu-item *ngIf="todoService.getProfile() !== 'Guest'" (click)="todoService.setShowprofile()">Edit
+    Profile
+  </button>
 </mat-menu>

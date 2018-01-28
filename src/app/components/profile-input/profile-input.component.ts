@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
-import { TodoService } from '../../services/todo.service';
-import { User } from '../../classes/user';
+import {TodoService} from '../../services/todo.service';
+import {User} from '../../classes/user';
 
 @Component({
   selector: 'app-profile-input',

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import * as moment from 'moment';
-import { TodoService } from './services/todo.service';
+import {TodoService} from './services/todo.service';
 
 
 @Component({
@@ -10,6 +10,7 @@ import { TodoService } from './services/todo.service';
 })
 export class AppComponent {
   title = 'todoApp';
+
   constructor(private todoService: TodoService) {
     let now = moment();
   }

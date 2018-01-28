@@ -1,15 +1,16 @@
 <mat-card *ngIf="showMe" class="todo-card">
-  <form class="todo-form" >
+  <form class="todo-form">
     <h4>New Task</h4>
     <mat-form-field class="todo-full-width">
-      <textarea matInput [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}" value={{todoText}} placeholder="Task Name"></textarea>
+      <textarea matInput [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}" value={{todoText}}
+                placeholder="Task Name"></textarea>
     </mat-form-field>
-      <div class="input-wrapper">
-        <div><h4>Date/Time</h4></div>
-        <input [(ngModel)]="todoDate" [ngModelOptions]="{standalone: true}"
-               [owlDateTimeTrigger]="dtPicker1" [owlDateTime]="dtPicker1">
-        <owl-date-time #dtPicker1></owl-date-time>
-      </div>
+    <div class="input-wrapper">
+      <div><h4>Date/Time</h4></div>
+      <input [(ngModel)]="todoDate" [ngModelOptions]="{standalone: true}"
+             [owlDateTimeTrigger]="dtPicker1" [owlDateTime]="dtPicker1">
+      <owl-date-time #dtPicker1></owl-date-time>
+    </div>
     <div class="clearfix"></div>
     <div class="button-container">
       <button mat-raised-button color="accent" (click)="cancelTodo()">Cancel</button>

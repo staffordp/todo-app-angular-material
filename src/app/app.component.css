@@ -2,10 +2,10 @@
   margin: 0 auto;
   width: 800px;
   padding: 10px 0;
-  /*height: 30px;*/
   background-color: #f8f8f8;
   border: 1px solid grey;
 }
+
 .todo-item-wrapper {
   margin: 0 auto;
   width: 800px;
@@ -14,7 +14,8 @@
 .divider {
   height: 10px;
 }
-button{
+
+button {
   float: right;
   margin-bottom: 50px;
   margin-right: 50px;

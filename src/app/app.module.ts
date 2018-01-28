@@ -6,23 +6,23 @@ import {Input, NgModule} from '@angular/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule, MatCheckboxModule, MatIconModule, MatIconRegistry} from '@angular/material';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { TodoInputComponent } from './components/todo-input/todo-input.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { TodoService } from './services/todo.service';
-import { MomentModule } from 'angular2-moment';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './components/header/header.component';
+import {TodoInputComponent} from './components/todo-input/todo-input.component';
+import {ProfileComponent} from './components/profile/profile.component';
+import {TodoService} from './services/todo.service';
+import {MomentModule} from 'angular2-moment';
 
-import { OwlDateTimeModule, OwlNativeDateTimeModule, OWL_DATE_TIME_LOCALE  } from 'ng-pick-datetime';
-import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import {OwlDateTimeModule, OwlNativeDateTimeModule, OWL_DATE_TIME_LOCALE} from 'ng-pick-datetime';
+import {TodoItemComponent} from './components/todo-item/todo-item.component';
 import {MatCardModule} from '@angular/material/card';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
-import { TodoWrapperComponent } from './components/todo-wrapper/todo-wrapper.component';
-import { ProfileInputComponent } from './components/profile-input/profile-input.component';
-import { OrderByPipe } from './pipes/order-by.pipe';
+import {TodoWrapperComponent} from './components/todo-wrapper/todo-wrapper.component';
+import {ProfileInputComponent} from './components/profile-input/profile-input.component';
+import {OrderByPipe} from './pipes/order-by.pipe';
 
 @NgModule({
   declarations: [
