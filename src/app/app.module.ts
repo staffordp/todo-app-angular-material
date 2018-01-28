@@ -62,9 +62,14 @@ export class TodoAppModule {
     iconRegistry.addSvgIcon(
       'morevert',
       sanitizer.bypassSecurityTrustResourceUrl('./assets/more.svg'));
+
     iconRegistry.addSvgIcon(
       'person',
       sanitizer.bypassSecurityTrustResourceUrl('./assets/ic_person_black_24px.svg'));
+
+    iconRegistry.addSvgIcon(
+      'arrow_back',
+      sanitizer.bypassSecurityTrustResourceUrl('./assets/ic_arrow_back_black_24px.svg'));
   }
 
   @Input()
