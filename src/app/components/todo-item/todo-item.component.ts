@@ -19,7 +19,7 @@ export class TodoItemComponent implements OnInit {
 
   private deleteTodo(): void {
     console.log('Deleting TODO.');
-    this.todoService.deleteTodo(this.todo.index);
+    this.todoService.deleteTodo(this.todo.idx);
 
   }
 
