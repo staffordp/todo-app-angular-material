@@ -54,16 +54,11 @@ export class TodoService {
     this.todoArr = this.todoArr.filter(function (item) {
       return item.idx !== idx;
     });
-    console.log('deleting ' + idx);
-
     console.log(this.todoArr);
 
   }
 
   public getShowinput(): boolean {
-    // console.log('Show Input');
-    // this.isShowingtodo = true;
-    // return this.isShowingtodo;
     return this.showTodo;
   }
 
@@ -72,41 +67,31 @@ export class TodoService {
   }
 
   public getShowprofile(): boolean {
-    // return this.isShowingprofile;
     return this.showProfile;
   }
 
 
   public setShowprofile(): void {
     this.showProfile = !this.showProfile;
-    console.log('toggling showProfile in service.');
-    console.log(this.showProfile);
   }
 
 
   public addUser(someName: string, someEmail: string): void {
-    console.log('Adding user!');
     // Check to see if it is modifying an existing user
     // Since we are not storing the user data as persistent, we can just check to see if the current user matches the latest index
     const x = this.userArr.length;
     if (x !== 1) {
       this.userArr.pop();
-      console.log('Modifying old user');
       this.nextUserindex = x;
-      // let user = new User(x, someName, someEmail);
     } else {
-      console.log('Adding new user!');
       this.nextUserindex++;
     }
     const user = new User(this.nextUserindex, someName, someEmail);
     this.userArr.push(user);
-
     this.setShowprofile();
-
   }
 
   public getProfile(): string {
-    // console.log('Returning user');
     return this.userArr[this.userArr.length - 1].realName;
   }
 

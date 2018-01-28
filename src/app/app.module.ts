@@ -4,14 +4,12 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {Input, NgModule} from '@angular/core';
 import {MatNativeDateModule, MatCheckboxModule, MatIconModule, MatIconRegistry} from '@angular/material';
-
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './components/header/header.component';
 import {TodoInputComponent} from './components/todo-input/todo-input.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {TodoService} from './services/todo.service';
 import {MomentModule} from 'angular2-moment';
-
 import {OwlDateTimeModule, OwlNativeDateTimeModule, OWL_DATE_TIME_LOCALE} from 'ng-pick-datetime';
 import {TodoItemComponent} from './components/todo-item/todo-item.component';
 import {MatCardModule} from '@angular/material/card';
@@ -22,8 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {TodoWrapperComponent} from './components/todo-wrapper/todo-wrapper.component';
 import {ProfileInputComponent} from './components/profile-input/profile-input.component';
 import {OrderByPipe} from './pipes/order-by.pipe';
-import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
-
+import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA} from '@angular/core';
 
 @NgModule({
   declarations: [

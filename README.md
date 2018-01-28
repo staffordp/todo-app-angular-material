@@ -1,4 +1,4 @@
-## Submission for Intertech Media Front End Engineer
+# Submission for Intertech Media Front End Engineer
 
 This project serves as my offical submission for the second coding test for the role of Front End Engineer.
 This app utilizes the [Angular Matierlal] (https://material.angular.io/) components.
@@ -7,6 +7,11 @@ The following additional components are user:
 
 * [Angular2Moment] (https://github.com/urish/angular2-moment)
 * [ng-pick-datetime] (https://www.npmjs.com/package/ng-pick-datetime)
+
+# Known Issues
+
+The ng test will output numerous errors.  Some I have addressed; others, I have not because I am not sure how. I have scoured stackOverflow 
+and google looking for solutions but to no avail.
 
 # TodoAppAngularMaterials
 

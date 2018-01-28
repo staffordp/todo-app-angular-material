@@ -1,10 +1,22 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {TestBed, async} from '@angular/core/testing';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './components/header/header.component';
+import {TodoInputComponent} from './components/todo-input/todo-input.component';
+import {TodoWrapperComponent} from './components/todo-wrapper/todo-wrapper.component';
+import {ProfileInputComponent} from './components/profile-input/profile-input.component';
+import {ProfileComponent} from './components/profile/profile.component';
+
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HeaderComponent,
+        TodoInputComponent,
+        TodoWrapperComponent,
+        ProfileInputComponent,
+        ProfileComponent
       ],
     }).compileComponents();
   }));

@@ -28,8 +28,8 @@ export class ProfileInputComponent implements OnInit {
 
   private saveUser(): void {
     // console.log('Saving the user');
-    console.log(this.nameText);
-    console.log(this.emailText);
+    // console.log(this.nameText);
+    // console.log(this.emailText);
     this.todoService.addUser(this.nameText, this.emailText);
 
   }
