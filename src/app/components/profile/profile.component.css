@@ -17,3 +17,8 @@
   width: 100px;
 }
 
+.move-down {
+  position: relative;
+  top: 17px;
+}
+
