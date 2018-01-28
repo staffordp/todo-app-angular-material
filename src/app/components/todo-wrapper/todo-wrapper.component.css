@@ -1,10 +1,6 @@
 .content-wrapper {
-  /*margin: 0 auto;*/
-  /*width: 800px;*/
-  /*padding: 10px 0;*/
-  /*height: 30px;*/
-  /*background-color: #f8f8f8;*/
-  /*border: 1px solid grey;*/
+  list-style: none;
+  padding: 0;
 }
 .todo-item-wrapper {
   margin: 0 auto;
