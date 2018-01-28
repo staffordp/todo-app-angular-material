@@ -1,8 +1,8 @@
 <div class="hero-container">
   <figure id="hero-figure">
     <img src="http://placekitten.com/800/300" />
-    <figcaption>
-      <div class="date-container" *ngIf="!todoService.getShowprofile()">
+    <figcaption *ngIf="!todoService.getShowprofile()">
+      <div class="date-container">
         {{date | date:'fullDate'}}
       </div>
       </figcaption>
