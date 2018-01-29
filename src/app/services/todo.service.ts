@@ -38,7 +38,7 @@ export class TodoService {
     return this.todoArr;
   }
 
-  public addTodo(text: string, date:string): void {
+  public addTodo(text: string, date: string): void {
     // Create a new todo from the input
     const todo = new Todo(this.nextIndex, text, date);
     // Push the todo to the array
