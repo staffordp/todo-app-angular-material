@@ -21,6 +21,7 @@ import {TodoWrapperComponent} from './components/todo-wrapper/todo-wrapper.compo
 import {ProfileInputComponent} from './components/profile-input/profile-input.component';
 import {OrderByPipe} from './pipes/order-by.pipe';
 import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA} from '@angular/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -36,8 +37,8 @@ import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA} from '@angular/core';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
     ReactiveFormsModule,
+    FormsModule,
     MatInputModule,
     MatNativeDateModule,
     MomentModule,
@@ -49,7 +50,8 @@ import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA} from '@angular/core';
     HttpClientModule,
     MatTooltipModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule
   ],
   providers: [
     TodoService
