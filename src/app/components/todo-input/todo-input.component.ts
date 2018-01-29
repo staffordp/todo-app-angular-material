@@ -12,8 +12,8 @@ export class TodoInputComponent implements OnInit {
 
   private showMe: boolean;
   private todoText: string;
-
   private todoDate: string;
+  // private todoDate: string;
   private showTodoinput: boolean;
   serializedDate = new FormControl((new Date()).toISOString());
 
