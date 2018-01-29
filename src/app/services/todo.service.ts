@@ -19,18 +19,18 @@ export class TodoService {
 
   constructor() {
     this.todoArr = [
-      new Todo(0, '2016-02-02T16:26:50-05:00', 'Countin\' flowers on the wall. That don\'t bother me at all.'),
-      new Todo(1, '2015-02-02T16:26:50-05:00', 'Playin\' solitaire till dawn with a deck of fifty-one'),
-      new Todo(2, '201802-02T16:26:50-05:00', 'Smokin\' cigarettes and watchin\' Captain Kangaroo')
-    ];
+      // new Todo(0, '', 'Countin\' flowers on the wall. That don\'t bother me at all.'),
+      // new Todo(1, '', 'Playin\' solitaire till dawn with a deck of fifty-one'),
+      new Todo(0, '', 'Smokin\' cigarettes and watchin\' Captain Kangaroo')
+  ];
     this.userArr = [
       new User(0, 'Guest', 'something@example.com'),
     ];
-    this.nextIndex = 3;
+    this.nextIndex = 1;
     this.nextUserindex = 1;
     this.isShowingtodo = false;
     this.isShowingprofile = false;
-    this.showTodo = false;
+    this.showTodo = true;
     this.showProfile = false;
   }
 
@@ -38,11 +38,15 @@ export class TodoService {
     return this.todoArr;
   }
 
-  public addTodo(text: string, date): void {
+  public addTodo(text: string, date:string): void {
     console.log('Adding todo!');
     // Create a new todo from the input
+
     const todo = new Todo(this.nextIndex, text, date);
     // Push the todo to the array
+    if (this.todoArr) {
+      console.log('exists.');
+    }
     this.todoArr.push(todo);
     // Hide the todo input
     this.showTodo = false;
