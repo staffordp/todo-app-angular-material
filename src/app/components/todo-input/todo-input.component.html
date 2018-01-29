@@ -2,12 +2,12 @@
   <form class="todo-form">
     <h4>New Task</h4>
     <mat-form-field class="todo-full-width">
-      <textarea matInput [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}" value={{todoText}}
+      <textarea matInput [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}"
                 placeholder="Task Name"></textarea>
     </mat-form-field>
     <div class="input-wrapper">
       <div><h4>Date/Time</h4></div>
-      <input [(ngModel)]="todoDate" [ngModelOptions]="{standalone: true}"
+      <input matInput [(ngModel)]="todoDate" [ngModelOptions]="{standalone: true}"
              [owlDateTimeTrigger]="dtPicker1" [owlDateTime]="dtPicker1">
       <owl-date-time #dtPicker1></owl-date-time>
     </div>
