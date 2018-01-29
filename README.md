@@ -1,6 +1,3 @@
-# Submission for Intertech Media Front End Engineer
-
-This project serves as my offical submission for the second coding test for the role of Front End Engineer.
 This app utilizes the [Angular Matierlal] (https://material.angular.io/) components.
 
 This is a TODO application written in Angular 5.  The TODOs created are not persistent and lost on browser refresh/reload. 
