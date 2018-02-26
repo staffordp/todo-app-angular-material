@@ -1,3 +1,7 @@
+
+# TodoAppAngularMaterials
+This is a simple to-do application written in Angular 5.
+
 This app utilizes the [Angular Matierlal] (https://material.angular.io/) components.
 
 This is a TODO application written in Angular 5.  The TODOs created are not persistent and lost on browser refresh/reload. 
@@ -6,8 +10,6 @@ The following additional components are user:
 
 * [Angular2Moment] (https://github.com/urish/angular2-moment)
 * [ng-pick-datetime] (https://www.npmjs.com/package/ng-pick-datetime)
-
-# TodoAppAngularMaterials
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
